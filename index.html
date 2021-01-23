@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AssADEV - Password Generator</title>
+        <link rel="stylesheet" href="style.css" />
+        <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="title">
+                <h1>Password Generator</h1>
+                <p>Click below to generate a password</p>
+            </div>
+            <form>
+                <div class="input_password_length">
+                    <label for="password_length">Number of characters :</label>
+                    <input id="password_length" name="password_length" type="number" value="16" min="4" max="20" maxlength="2" />
+                </div>
+                <div class="input_password">
+                    <input name="password" type="text" readonly />
+                    <i class="bx bx-copy"></i>
+                </div>
+                <button type="submit">Generate</button>
+            </form>
+        </div>
+        <div class="historique">
+            <div class="btnhistory">
+                <i class="bx bx-history"></i>
+            </div>
+            <div class="title_history">
+                <h2>History</h2>
+                <p>Here you will find all the passwords you have generated</p>
+            </div>
+            <div class="history_password">
+                <ul></ul>
+            </div>
+        </div>
+        <script type="text/javascript" src="app.js"></script>
+    </body>
+</html>

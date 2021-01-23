@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(40deg, #000, #222);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    padding: 25px;
+}
+
+.container .title {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.container .title h1 {
+    color: #00ff8c;
+}
+
+.container .title p {
+    color: #fff;
+    font-size: 22px;
+}
+
+.container form {
+    width: 100%;
+}
+
+/* Password Display */
+.container form .input_password {
+    position: relative;
+}
+
+.container form .input_password input {
+    position: relative;
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #00ff8c;
+    color: #fff;
+    font-size: 20px;
+}
+
+.container form .input_password i {
+    position: absolute;
+    z-index: 5;
+    top: 45%;
+    right: 0;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.container form .input_password i:hover {
+    color: #00ff8c;
+}
+
+/* Password Length */
+.container form .input_password_length {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.container form .input_password_length label {
+    color: #fff;
+    font-size: 20px;
+}
+
+.container form .input_password_length input {
+    background: none;
+    border: none;
+    color: #00ff8c;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+/* Submit Button */
+.container form button {
+    width: 100%;
+    margin-top: 10px;
+    border: none;
+    background: transparent;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-size: 20px;
+    padding: 5px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.container form button:hover {
+    color: #000;
+    background: #00ff8c;
+}
+
+/* Historique */
+.historique {
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    top: 0;
+    max-width: 400px;
+    min-height: 100vh;
+    background: linear-gradient(40deg, #0c0c0c, #222);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    padding: 25px;
+    transform: translateX(100%);
+    transition: 0.3s;
+}
+
+.historique.active {
+    transform: translateX(0);
+}
+
+.historique .btnhistory {
+    position: absolute;
+    top: 50%;
+    left: -60px;
+    transform: translateY(-50%);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.historique.active .btnhistory {
+    background: #00ff8c;
+}
+
+.historique .btnhistory i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.historique.active .btnhistory i {
+    color: #000;
+}
+
+.historique .btnhistory:hover i {
+    color: #00ff8c;
+}
+
+.historique.active .btnhistory:hover i {
+    color: #fff;
+}
+
+.historique .title_history {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.historique .title_history h2 {
+    color: #00ff8c;
+    font-size: 2em;
+}
+
+.historique .title_history p {
+    color: #fff;
+    font-size: 20px;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+}
+
+ul li {
+    font-size: 20px;
+    color: #fff;
+}
+
+ul li:nth-child(odd) {
+    color: #00ff8c;
+}
